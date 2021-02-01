@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Header -->
+    <header class="position-fixed top-0 start-0 w-100 bg-white" style="z-index: 999;">
+      <nav class="container">
+      <div class="nav-bar" style="margin: 0 1rem 0 1rem; max-width: 1300px; margin: auto;">
+          <div class="nav-header d-flex align-items-center justify-content-between pt-2" style="margin: 0 1rem 0 1rem;">
+              <div class="logo">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaC3TVAAFTYpZ3I980MS9AUlLnD4AhzN9QUg&usqp=CAU" alt="logo" style="width: 60; height: 40px; margin-bottom: 10px;"/>
+              </div>
+              <div class="toggle_menu" id="toggle-menu">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+                 <ul class="nav-link d-flex text-black">
+                  <li class="m-3"><a href="#welcome" class="text-decoration-none fs-6 p-2">Welcome</a></li>
+                  <li class="m-3"><a href="#menu" class="text-decoration-none fs-6 p-2">Menu</a></li>
+                  <li class="m-3"><a href="#pictures" class="text-decoration-none fs-6 p-2">Pictures</a></li>
+                  <li class="m-3"><a href="#restaurants" class="text-decoration-none fs-6 p-2">Restaurants</a></li>
+                  <li class="m-3"><a href="#contact" class="text-decoration-none fs-6 p-2">Contact</a></li>
+                 </ul>
+          </div>
+      </div>
+      </nav>
+  </header>
+
+          <!-- Welcome -->
+          <section class="main" id="welcome">
+            <div class="slider" id="slider">
+                <div class="slides current">
+                    <h1>Bruxelles</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="slides">
+                  <h1>Liége</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slides">
+                  <h1>Anvers</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slides">
+                  <h1>Genk</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="slides">
+                  <h1>Namur</h1>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <a class="prev" id="prev"> < </a>
+            <a class="next" id="next"> > </a>
+            <a href="#" class="button_start">Engage ici</a>
+          </section>
+      
+
+          <!-- menu -->
+
+          <section class="menu" id="menu">
+            <article class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="text-black fs-3 fw-bold d-flex align-items-center justify-content-center pt-5">Menu</h1>
+                </div>
+              </div>
+              <div class="row row-cols-1" style="max-width: 800px; margin: auto;">
+                      <!-- Menu price -->
+                  <div class="col-sm-3 mt-5">
+                    <img class="rounded-circle" src="https://recette.supertoinette.com/152888/b/tarte-aux-aubergines.jpg" alt="" style="max-width: 100%;">
+                    <p class="text-center pt-3 fw-bold">Tartes</p>
+                    <p class="text-center pb-3 fw-bold">Prix: 5.50€</p>
+                   </div>
+                   <div class="col-sm-3 mt-5">
+                    <img class="rounded-circle" src="https://recettes.de/images/blogs/thermominoux/sauce-bolognaise-thermomix.640x480.jpg" alt="" style="max-width: 100%;">
+                    <p class="text-center pt-3 fw-bold">Tartes</p>
+                    <p class="text-center pb-3 fw-bold">Prix: 5.50€</p>
+                   </div>
+                   <div class="col-sm-3 mt-5">
+                    <img class="rounded-circle" src="https://www.hervecuisine.com/wp-content/uploads/2020/03/recette-tarte-aux-pommes-maison-1-1024x684.jpg.webp" alt="" style="max-width: 100%;">
+                    <p class="text-center pt-3 fw-bold">Tartes</p>
+                    <p class="text-center pb-3 fw-bold">Prix: 5.50€</p>
+                   </div>
+                       <!-- Price -->
+                   <div class="col-sm-3 mt-5">
+                    <img class="rounded-circle" src="https://www.amourdecuisine.fr/wp-content/uploads/2012/10/tarte-nomade-1_1.jpg" alt="" style="max-width: 100%;">
+                    <p class="text-center pt-3 fw-bold">Tartes</p>
+                    <p class="text-center pb-3 fw-bold">Prix: 5.50€</p>
+                   </div>
+              </div>
+              <div class="row" style="margin: 0 1rem 0 1rem; max-width: 800px; margin: auto;">
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mt-2">
+                      <h2 class="fs-5 pt-2">Spaghetti :</h2>
+                      <p class="fs-5 fw-bold pt-3">5.50€</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mt-2">
+                      <h2 class="fs-5 pt-2">Pizza :</h2>
+                      <p class="fs-5 fw-bold pt-3">6.00€</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mt-2">
+                      <h2 class="fs-5 pt-2">Coca-cola :</h2>
+                      <p class="fs-5 fw-bold pt-3">2.50€</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap mt-2">
+                      <h2 class="fs-5 pt-2">Frites :</h2>
+                      <p class="fs-5 fw-bold pt-3">2.00€</p>
+                    </div>                 
+                  </div>
+                  <div class="col-sm-6 mt-4">
+                      <div class="col-sm">
+                          <img class="rounded-2" src="https://gourmandiz.dhnet.be/app/uploads/2018/04/spaghettisraguagneau-690x388.jpg" alt="" style="max-width: 100%;">
+                    </div>
+                  </div>
+                </div>
+            </article>
+          </section>
+
+          <!-- pictures -->
+
+          <section class="gallery" id="pictures">
+              <article class="container">
+                <h1 class="text-black fs-3 fw-bold d-flex align-items-center justify-content-center pt-4">Pictures</h1>
+                <div class="row d-flex flex-wrap gallery-items" style="margin: 0 1rem 0 1rem; max-width: 800px; margin: auto;">    
+                  
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination d-flex align-items-center justify-content-center">
+                      <li class="prev"><a class="page-link" href="index.html">Prev</a></li>
+                      <li class="page"><a class="page-link" href="pictures1.html">page</a></li>
+                      <li class="next"><a class="page-link" href="pictures2.html">Next</a></li>
+                    </ul>
+                  </nav>
+
+                             <!-- 1 -->
+                    <div class="col-sm-3 w-auto h-100" style="flex: 33.3%; padding: 0 4px; overflow: hidden;">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://cdn.radiofrance.fr/s3/cruiser-production/2019/02/3e27345f-9e1e-45bb-9e5f-906f0abb2870/1136_gettyimages-922684138.jpg" alt="">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://1.bp.blogspot.com/-DJgkm3xzjiI/X3tFIKvbMNI/AAAAAAABVGI/9johPylVyAkYc2lEdY8HBP0NFv9tqrBQwCLcBGAsYHQ/s16000/tarte-normande-pommes-facile.jpg" alt="">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_in_line/2019/10/08/node_452073/1640276/public/2019/10/08/B9721168300Z.1_20191008133942_000%2BGEEEL4M81.1-0.jpg?itok=zg9TWRJQ1570547213"" alt="">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://www.amourdecuisine.fr/wp-content/uploads/2012/10/tarte-nomade-1_1.jpg" alt="">
+                    </div>
+                               <!-- 2 -->
+                    <div class="col-sm-3 w-auto h-100" style="flex: 33.3%; padding: 0 4px; overflow: hidden;">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://shop.tartes.be/media/catalog/product/cache/7eff3c08d5d826b8b08407e40d275ce0/m/e/merveilleux-3-squared.jpg" alt="">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://shop.tartes.be/media/catalog/product/cache/7eff3c08d5d826b8b08407e40d275ce0/g/o/gourmand-part-1-1x1.jpg" alt="">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXzmc_A4uEfpQ9efqQGNlKEikkrJJ4zgX2w&usqp=CAU" alt="">
+                        <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_in_line/2019/10/08/node_452073/1640276/public/2019/10/08/B9721168300Z.1_20191008133942_000%2BGEEEL4M81.1-0.jpg?itok=zg9TWRJQ1570547213" alt="">
+                    </div>
+                           <!-- 3 -->
+                    <div class="col-sm-3 w-auto h-100" style="flex: 33.3%; padding: 0 4px; overflow: hidden;">
+                      <img class="w-100 h-100 rounded-5 text" style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_in_line/2019/10/08/node_452073/1640276/public/2019/10/08/B9721168300Z.1_20191008133942_000%2BGEEEL4M81.1-0.jpg?itok=zg9TWRJQ1570547213"" alt="">
+                        <img class="w-100 h-100 rounded-5 text"  style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://recettes.de/images/blogs/thermominoux/sauce-bolognaise-thermomix.640x480.jpg" alt="">
+                        <img class="w-100 h-100 rounded-5 text"  style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCiS61NY_AGeIs_eoTTKQcDs4VWEbmLkv7FA&usqp=CAU" alt="">
+                        <img class="w-100 h-100 rounded-5 text"  style="margin-top: 2%; cursor: pointer; transition: .3s linear;" src="https://www.shootlux.be/wp-content/uploads/2018/12/AdobeStock_31229310-e1544260477984.jpeg" alt="">
+                    </div>
+                </div>
+
+              </article>
+          </section>
+
+          <!-- restaurant -->
+
+          <section id="restaurants">
+            <article class="container">
+              <h1 class="text-black fs-3 fw-bold d-flex align-items-center justify-content-center pt-3 text-white">Restaurants</h1>
+              <div class="row row-cols-1 row-cols-md-3 g-4 pb-3" style="max-width: 800px; margin: auto;">
+                                <!-- 1 -->
+                <div class="col">
+                  <div class="card h-80">
+                    <img src="https://aeevicatko.cloudimg.io/cdn/n/n/https://www.levenly.com/medias/blog/640_/8/installation-sono-restaurant.jpg" class="card-img-top text1" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Namur</h5>
+                      <p class="card-text fw-bold">Ouvre 06h a 00h</p>
+                    </div>
+                  </div>
+                </div>
+                                  <!-- 2 -->
+                <div class="col">
+                  <div class="card h-80">
+                    <img src="https://maison1.advcdn.net/images/medias/000/036/000036032/600.jpg" class="card-img-top text1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Liége</h5>
+                        <p class="card-text fw-bold">Ouvre 24h/24</p>
+                    </div>
+                  </div>
+                </div>
+                                <!-- 3 -->
+                <div class="col">
+                  <div class="card h-80">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/74/99/72/salle-du-restaurant-gastronomi.jpg" class="card-img-top text1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Rotterdam</h5>
+                        <p class="card-text fw-bold">Ouvre de 7h/7</p>
+                    </div>
+                  </div>
+                </div>
+                                <!-- 4 -->
+                <div class="col">
+                  <div class="card h-80">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/5a/99/f4/salle.jpg" class="card-img-top text1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Schaerbeeck</h5>
+                        <p class="card-text fw-bold">Ouvre de 09h a 23h</p>
+                    </div>
+                  </div>
+                </div>
+                                <!-- 5 -->
+                <div class="col">
+                  <div class="card h-80">
+                    <img src="https://www.legrandplace.be/images/photo-resto-4.jpg" class="card-img-top text1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Uccle</h5>
+                        <p class="card-text fw-bold">Ouvre de 7h a 00h</p>
+                    </div>
+                  </div>
+                </div>
+                                <!-- 6 -->
+                <div class="col">
+                  <div class="card h-80">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/5a/99/c4/salle.jpg" class="card-img-top text1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ixelles</h5>
+                        <p class="card-text fw-bold">Ouvre de 08h a 22h</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </article>
+          </section>
+
+            <!-- Contact -->
+
+          <footer id="contact">
+            <h1 class="text-black fs-3 fw-bold d-flex align-items-center justify-content-center pt-3">Contact</h1>
+            <div class="contact w-100 mt-2" style="background: #fff;">
+              <div class="container">
+                <div class="row d-flex align-items-center justify-content-center" style="max-width: 800px; margin: auto;">
+                  <div class="col-sm-4 text-black">
+                    <h2 class="text-center pt-4 fs-4">Lorem ipsum dolor sit amet</h2>
+                    <p class="text-center pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, nihil harum 
+                      </p>
+                  </div>
+
+                  <div class="col-sm-4 flex-column" style="margin-bottom: 30px;">
+                    <h2 class="text-center text-black pt-3 fs-4">Lorem ipsum dolor sit amet</h2>
+                    <div class="text-black m-3 text-center">
+                      <i class="fab fa-facebook-f m-2"></i>
+                      <i class="fab fa-twitter m-2"></i>
+                      <i class="fab fa-instagram m-2"></i>
+                      <i class="fab fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 text-black flex-column d-flex align-items-center justify-content-center pt-4" style="margin-bottom: 2px;">
+                    <form action="page" style="max-width:500px;margin:auto">
+                      <h2 class="text-center text-black pt-3 fs-4">Contact</h2>
+                      <div class="input-container m-2">
+                        <i class="fas fa-user-tie"></i>
+                        <input class="input-field" type="text" placeholder="firstName" name="usrnm" required>
+                      </div>
+                      <div class="input-container m-2">
+                        <i class="fas fa-user-tie"></i>
+                        <input class="input-field" type="text" placeholder="name" name="usrnm" required>
+                      </div>
+                      
+                      <div class="input-container m-2">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Username" name="usrnm" required>
+                      </div>
+                    
+                      <div class="input-container m-2">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email" required>
+                      </div>
+                      
+                      <div class="input-container m-2">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Password" name="psw" required>
+                      </div>
+
+                      <div class="input-container m-2">
+                        <i class="fas fa-hand-pointer"></i>
+                        <select id="country" name="country" aria-placeholder="Select">
+                          <option value="select">Select</option>
+                          <option value="hamburger">Hamburger</option>
+                          <option value="rice">Rice</option>
+                          <option value="pattes">Pattes</option>
+                          <option value="spaghetti">Spaghetti</option>
+                          <option value="omelette">Omelette</option>
+                        </select>
+                      </div>
+                      <div class="input-container m-2">
+                        <i class="fas fa-closed-captioning"></i>
+                      <input type="submit" value="Submit" class="p-1 fw-bold">
+                      </div>
+                    </form>
+                    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

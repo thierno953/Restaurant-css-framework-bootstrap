@@ -1,0 +1,263 @@
+/* Header */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #70e1f5;  
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5); 
+    background: linear-gradient(to right, #dad6d1, #70e1f5); 
+}
+
+@media screen and (max-width: 720px){
+    .nav-link{
+        position: fixed;
+        top: 58px;
+        left: 100%;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        background: #fff;
+        transition: all .3s ease;
+    }
+    .nav-link.active{
+        left: 3rem;
+        transition: all .3s ease; 
+    }
+    .nav-link li{
+        margin: 1.5rem;
+    }
+    .nav-link li a{
+        padding: 1rem;
+    }
+    .toggle_menu .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #000;
+        cursor: pointer;
+    }
+    #toggle-menu{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    #toggle-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #toggle-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #toggle-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Welcome */
+
+.welcome{
+    background: url("https://www.decoidees.be/wp-content/uploads/2019/08/sliderrestotheme-1000x650.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+/* Restaurants */
+#restaurants{
+    background: url("https://ad962edbae8ba7b03b7f-d10007df79b5b7a4e475a291e50a08cf.ssl.cf3.rackcdn.com/creer-un-restaurant/creer-un-restaurant.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; 
+    margin: 10px;  
+}
+
+.text1{
+    transition: all ease 0.3s;
+}
+.text1:hover{
+    transform: scale(1.01);
+    transition: all ease 0.1s;
+}
+ 
+/*  pictures */
+.text{
+    filter: grayscale(1) brightness(0.5);
+    transition: .3s linear;
+}
+.text:hover{
+    filter: grayscale(0) brightness(1);
+}
+
+/* slider */
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #444;
+}
+.main .slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.main .slider .slides{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.2s;
+    z-index: -1;
+    overflow: hidden;
+}
+.main .slider .slides::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.main .slider .slides:nth-child(1){
+    background: url("https://www.mada-hotels-consultant.com/wp-content/uploads/2015/04/DSC_0147.jpg");
+    background: linear-gradient(rgba(0,0,0,.35));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .slider .slides:nth-child(2){
+    background: url("https://1.bp.blogspot.com/-41RzureJe0Y/XD-Zo8sCtuI/AAAAAAAAFMY/kBwN3vJAjJIvE-JZ-LXizcMtYi11ZEySQCLcBGAs/s1600/restaurant-449952_1280.jpg");
+    background: linear-gradient(rgba(0,0,0,.35));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .slider .slides:nth-child(3){
+    background: url("https://lebonartisan.cdn.prismic.io/lebonartisan/2cef2fcd4d40581b389f77d06534bbce89e8df3d_une-salle-dans-laquelle-vont-sinstaller-vos-clients.jpg");
+    background: linear-gradient(rgba(0,0,0,.35));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .slider .slides:nth-child(4){
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Inside_Le_Procope.jpg/1200px-Inside_Le_Procope.jpg");
+    background: linear-gradient(rgba(0,0,0,.35));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .slider .slides:nth-child(5){
+    background: url("https://ad962edbae8ba7b03b7f-d10007df79b5b7a4e475a291e50a08cf.ssl.cf3.rackcdn.com/2166/facteurs-cles-de-succes-d-un-restaurant.jpg");
+    background: linear-gradient(rgba(0,0,0,.35));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .slider .slides.current{
+    opacity: 1;
+    z-index: 1;
+}
+.main .slider .slides h1{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 750;
+    color: #fff;
+    box-shadow: 0px 0.5px 15px rgba(0,0,0,.8);
+    margin-left: -500%;
+    transition: 0.3s linear;
+}
+.main .slider .slides.current h1{
+    animation: animateheading 1s forwards 1;
+    animation-delay: 0.3s;
+}
+@keyframes animateheading{
+    to{
+        margin-left: 0;
+    }
+}
+.main .slider .slides p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 0.5px 15px rgba(0,0,0,.8);
+    margin-right: -500%;
+    transition: 0.3s linear;
+}
+.main .slider .slides.current p{
+    animation: animateParagraph 1s forwards 1;
+    animation-delay: 0.3s;
+}
+@keyframes animateParagraph {
+    to{
+        margin-right: 0;
+    }
+}
+.main a{
+    position: absolute;
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 1;
+    cursor: pointer;
+}
+.main a.next{
+    text-decoration: none;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+.main a.prev{
+    text-decoration: none;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+.main a.next:hover,
+.main a.prev:hover{
+    background: #f8c300;
+    border-color: #017bf5;
+}
+.main a.button_start{
+    text-decoration: none;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #017bf5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 550;
+}
+.main a.button_start:hover{
+    background: #f8c300;
+}
+
+
